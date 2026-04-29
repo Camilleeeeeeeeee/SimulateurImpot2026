@@ -1,0 +1,41 @@
+# rev1,rev2,situation,nbEnfants,nbEnfSH,parentIsole,impotAttendu
+# ─── EXG_IMPOT_01 + EXG_IMPOT_02 + EXG_IMPOT_04 : cas nominaux célibataire ───
+5000,0,CELIBATAIRE,0,0,false,0
+20000,0,CELIBATAIRE,0,0,false,199
+30000,0,CELIBATAIRE,0,0,false,1637
+40000,0,CELIBATAIRE,0,0,false,4086
+90000,0,CELIBATAIRE,0,0,false,17586
+# ─── EXG_IMPOT_02 : abattement max plafonné à 14171 ──────────────────────────
+200000,0,CELIBATAIRE,0,0,false,60768
+# ─── EXG_IMPOT_03 : couple marié ──────────────────────────────────────────────
+50000,0,MARIE,0,0,false,2058
+30000,30000,MARIE,0,0,false,3455
+40000,40000,MARIE,0,0,false,8172
+# ─── EXG_IMPOT_03 : couple pacsé (traité comme marié) ────────────────────────
+30000,30000,PACSE,0,0,false,3455
+# ─── EXG_IMPOT_03 : enfants (0.5 part pour les 2 premiers) ───────────────────
+30000,0,CELIBATAIRE,1,0,false,733
+30000,0,CELIBATAIRE,2,0,false,0
+# ─── EXG_IMPOT_03 : 3e enfant = 1 part entière ────────────────────────────────
+30000,30000,MARIE,3,0,false,0
+# ─── EXG_IMPOT_03 : enfant en situation de handicap (+0.5 part) ───────────────
+30000,30000,MARIE,2,1,false,868
+# ─── EXG_IMPOT_03 : parent isolé (+0.5 part si enfants) ──────────────────────
+30000,0,DIVORCE,2,0,true,0
+30000,0,CELIBATAIRE,1,0,true,0
+# ─── EXG_IMPOT_03 : veuf sans enfants = 1 part (célibataire fiscal) ─────────
+30000,0,VEUF,0,0,false,1637
+# ─── EXG_IMPOT_03 : veuf avec enfants = 2 parts déclarants ──────────────────
+30000,0,VEUF,1,0,false,0
+# ─── EXG_IMPOT_05 : plafond demi-part (gain enfants plafonné) ─────────────────
+100000,100000,MARIE,1,0,false,40498
+# ─── EXG_IMPOT_06 : décote célibataire (impôt avant décote < 1929) ───────────
+25000,0,CELIBATAIRE,0,0,false,918
+# ─── EXG_IMPOT_06 : décote couple (impôt avant décote < 3191) ────────────────
+20000,0,MARIE,0,0,false,0
+# ─── EXG_IMPOT_07 : CEHR célibataire (RFR > 250 000) ────────────────────────
+300000,0,CELIBATAIRE,0,0,false,106843
+# ─── EXG_IMPOT_07 : CEHR célibataire > 500 000 ───────────────────────────────
+600000,0,CELIBATAIRE,0,0,false,251701
+# ─── EXG_IMPOT_07 : CEHR couple > 500 000 ────────────────────────────────────
+300000,300000,MARIE,0,0,false,213685
