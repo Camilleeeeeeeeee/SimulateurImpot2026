@@ -1,5 +1,5 @@
 # Simulateur d'Impôt 2024                                                                                    
-Projet réalisé dans le cadre d'un TP à l'IUT par **Camil GOLLIOT** et **Lylian MONTALS**.
+Projet réalisé dans le cadre d'un TP à l'IUT par **Camille GOLLIOT** et **Lylian MONTALS**.
 
 **Note sur les commits** : le projet a été réalisé en une seule session de travail en présentiel à l'IUT. Les commits ne reflètent donc pas nécessairement la contribution des deux étudiants — le travail a été fait en binôme sur une même machine.
 
